@@ -23,7 +23,7 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 
-<body style="overflow: visible">
+<body style="overflow: visible" onload="village()">
 
     <div id="contextWrap">
         <!--sidebar-->
@@ -598,7 +598,7 @@
             <!--maincontent-->
             <div class="mainWrap navslide hiddenIt" id="table">
                 <div class="ui equal width left aligned padded grid stackable">
-                    <div class="row">
+                    <div class="row" id="villageUser">
                         <div class="column">
                             <div class="ui segments">
                                 <div class="ui segment no-padding-bottom">
@@ -765,6 +765,12 @@
        }
        initMap();//创建和初始化地图
    </script>
+<script>
+    function village() {
+        var windowsHeight= window.outerHeight;
+        document.getElementById('villageUser').style.height=windowsHeight+'px';
+    }
+</script>
 </body>
 
 </html>

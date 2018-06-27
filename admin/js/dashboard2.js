@@ -432,7 +432,7 @@ $(document).ready(function() {
     if ($('#chart_1').length > 0) {
         var ctx1 = document.getElementById("chart_1").getContext("2d");
         var data1 = {
-            labels: ["7日前", "6日前", "5日前", "5日前", "5日前", "5日前", "1日前"],
+            labels: ["7日前", "6日前", "5日前", "4日前", "3日前", "2日前", "1日前"],
             datasets: [{
                     label: "住户申请",
                     backgroundColor: "rgba(238, 206, 83, 0.9)",
