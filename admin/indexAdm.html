@@ -44,38 +44,52 @@
 
                 <div class="title item">
                     <i class="ion-person-stalker titleIcon icon"></i>
-                    <a onclick="userMan()">住户管理</a>
+                        <a onclick="userMan()">住户管理</a>
                     <i class="dropdown icon"></i>
                 </div>
                 <div class="content">
                     <a class="item" onclick="userManager()">
                         凯恒中心
                     </a>
+                    <a class="item" onclick="userManager()">
+                        烧酒胡同三号院
+                    </a>
+                    <a class="item" onclick="userManager()">
+                        朝阳首府
+                    </a>
                 </div>
                 <div class="title item">
                     <i class="ion-pie-graph titleIcon  icon"></i>
-                    车位管理
+                        <a onclick="carMan()">车位管理</a>
                     <i class="dropdown icon"></i>
                 </div>
                 <div class="content">
-                    <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/sidebar.html">
-                    Sidebar
-                </a>
+                    <a class="item" onclick="carManager()">
+                        凯恒中心
+                    </a>
+                    <a class="item" onclick="carManager()">
+                        烧酒胡同三号院
+                    </a>
+                    <a class="item" onclick="carManager()">
+                        朝阳首府
+                    </a>
                 </div>
 
                 <div class="title item">
                     <i class="ion-briefcase titleIcon icon"></i>
-
-                    <i class="dropdown icon"></i> 缴费管理
+                        <a onclick="moneyMan()">缴费管理</a>
+                    <i class="dropdown icon"></i>
                 </div>
                 <div class="content">
-
-                    <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/breadcrumb.html">
-                    水费管理
-                </a>
-                    <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/button.html">
-                    电费管理
-                </a>
+                    <a class="item" onclick="moneyManager()">
+                        凯恒中心
+                    </a>
+                    <a class="item" onclick="moneyManager()">
+                        烧酒胡同三号院
+                    </a>
+                    <a class="item" onclick="moneyManager()">
+                        朝阳首府
+                    </a>
                 </div>
             </div>
 
@@ -101,44 +115,6 @@
                     <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/editor.html">
                     Html Editor
                 </a>
-                </div>
-            </div>
-            <div class="ui dropdown item displaynone scrolling">
-                <span>Table</span>
-                <i class="ion-flame icon"></i>
-
-                <div class="menu">
-                    <div class="header">
-                        Table
-                    </div>
-                    <div class="ui divider"></div>
-                    <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/table.html">
-                    Static Table
-                </a>
-                    <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/datatable.html">
-                    Datatable
-                </a>
-                    <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/editable.html">
-                    Editable
-                </a>
-                </div>
-            </div>
-            <div class="ui dropdown item displaynone scrolling">
-                <span>Charts</span>
-                <i class="ion-arrow-graph-up-right icon"></i>
-
-                <div class="menu">
-                    <div class="header">
-                        Charts
-                    </div>
-                    <div class="ui divider"></div>
-                    <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/chart.html">
-                    Charts 1
-                </a>
-                    <a class="item" href="http://demo.cssmoban.com/cssthemes4/tpez_9_bcv/chart-2.html">
-                    Charts 2
-                </a>
-
                 </div>
             </div>
             <div class="ui divider"></div>
@@ -193,8 +169,8 @@
                         </div>
                     </div>
                 </div>
+            </a>
         </div>
-        </a>
         <!--sidebar-->
         <div class="ui right sidebar">
             <div class="ui pointing secondary two item tabular menu">
@@ -418,8 +394,9 @@
                             <img class="ui mini circular image" src="img/avatar/people/enid.png" alt="label-image" />
                             <div class="menu">
                                 <a class="item" href="#">个人信息</a>
-                                <div class="ui divider"></div>
                                 <a class="item">帮助</a>
+                                <a class="item" href="supAdm.html">超级管理员</a>
+                                <div class="ui divider"></div>
                                 <a class="item" href="../index.html">退出</a>
                             </div>
                         </div>
@@ -596,7 +573,7 @@
             </div>
             <!--maincontent-->
             <!--maincontent-->
-            <div class="mainWrap navslide hiddenIt" id="table">
+            <div class="mainWrap navslide hiddenIt" id="table1">
                 <div class="ui equal width left aligned padded grid stackable">
                     <div class="row" id="villageUser">
                         <div class="column">
@@ -606,7 +583,7 @@
                                         小区住户表
                                     </h1>
                                     <h5 class="ui right floated header" style="position: relative;top: 10px;left: -50px">
-                                        <a class="ui blue mini basic label" id="add_table">添加数据</a>
+                                        <a class="ui blue mini basic label" id="add_table1" onclick="addTable1()">添加数据</a>
                                     </h5>
                                     <div class="clearfix">
 
@@ -614,7 +591,7 @@
                                 </div>
                                 <div>
                                     <div style="width:100%;border:#ccc solid 1px;">
-                                        <table id="targetTable" width="100%" cellpadding="0" cellspacing="0" style="font-family: '微软雅黑';line-height: 50px;font-size: 16px;text-align: center">
+                                        <table id="targetTable1" width="100%" cellpadding="0" cellspacing="0" style="font-family: '微软雅黑';line-height: 50px;font-size: 16px;text-align: center">
                                             <tr>
                                                 <th style="width: 20%">姓名</th>
                                                 <th style="width: 20%">住址</th>
@@ -622,7 +599,7 @@
                                                 <th style="width: 20%">邮箱</th>
                                                 <th style="width: 20%" class="dd">操作</th>
                                             </tr>
-                                            <tr class="append-row">
+                                            <tr class="append-row1">
                                             </tr>
                                         </table>
                                     </div>
@@ -633,6 +610,79 @@
                 </div>
             </div>
             <!--maincontent-->
+            <div class="mainWrap navslide hiddenIt" id="table2">
+                <div class="ui equal width left aligned padded grid stackable">
+                    <div class="row" id="villageCar">
+                        <div class="column">
+                            <div class="ui segments">
+                                <div class="ui segment no-padding-bottom">
+                                    <h1 class="ui left floated header" style="font-family: '微软雅黑 Light'">
+                                        小区车位表
+                                    </h1>
+                                    <h5 class="ui right floated header" style="position: relative;top: 10px;left: -50px">
+                                        <a class="ui blue mini basic label" id="add_table2" onclick="addTable2()">添加数据</a>
+                                    </h5>
+                                    <div class="clearfix">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="width:100%;border:#ccc solid 1px;">
+                                        <table id="targetTable2" width="100%" cellpadding="0" cellspacing="0" style="font-family: '微软雅黑';line-height: 50px;font-size: 16px;text-align: center">
+                                            <tr>
+                                                <th style="width: 20%">姓名</th>
+                                                <th style="width: 20%">住址</th>
+                                                <th style="width: 20%">联系方式</th>
+                                                <th style="width: 20%">车位</th>
+                                                <th style="width: 20%" class="dd">操作</th>
+                                            </tr>
+                                            <tr class="append-row2">
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainWrap navslide hiddenIt" id="table3">
+                <div class="ui equal width left aligned padded grid stackable">
+                    <div class="row" id="villageMoney">
+                        <div class="column">
+                            <div class="ui segments">
+                                <div class="ui segment no-padding-bottom">
+                                    <h1 class="ui left floated header" style="font-family: '微软雅黑 Light'">
+                                        小区缴费表
+                                    </h1>
+                                    <h5 class="ui right floated header" style="position: relative;top: 10px;left: -50px">
+                                        <a class="ui blue mini basic label" id="add_table3" onclick="addTable3()">添加数据</a>
+                                    </h5>
+                                    <div class="clearfix">
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="width:100%;border:#ccc solid 1px;">
+                                        <table id="targetTable3" width="100%" cellpadding="0" cellspacing="0" style="font-family: '微软雅黑';line-height: 50px;font-size: 16px;text-align: center">
+                                            <tr>
+                                                <th style="width: 20%">姓名</th>
+                                                <th style="width: 20%">住址</th>
+                                                <th style="width: 20%">联系方式</th>
+                                                <th style="width: 15%">费用</th>
+                                                <th style="width: 15%">缴费类型</th>
+                                                <th style="width: 10%" class="dd">操作</th>
+                                            </tr>
+                                            <tr class="append-row3">
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--jquery-->
@@ -770,6 +820,18 @@
         var windowsHeight= window.outerHeight;
         document.getElementById('villageUser').style.height=windowsHeight+'px';
     }
+    $("body").on("touchstart", function(e) {
+        e.preventDefault();
+        startX = e.originalEvent.changedTouches[0].pageX,
+            startY = e.originalEvent.changedTouches[0].pageY;
+    });
+    $("body").on("touchmove", function(e) {
+        e.preventDefault();
+        moveEndX = e.originalEvent.changedTouches[0].pageX,
+            moveEndY = e.originalEvent.changedTouches[0].pageY,
+            X = moveEndX - startX,
+            Y = moveEndY - startY;
+    });
 </script>
 </body>
 

@@ -649,11 +649,33 @@ $(document).ready(function() {
 function userMan() {
 
 }
+function carMan() {
+    
+}
+function moneyMan() {
+    
+}
 function recently() {
-    $('#table').addClass('hiddenIt');
     $('#recently').removeClass('hiddenIt');
+    $('#table1').addClass('hiddenIt');
+    $('#table2').addClass('hiddenIt');
+    $('#table3').addClass('hiddenIt');
 }
 function userManager() {
     $('#recently').addClass('hiddenIt');
-    $('#table').removeClass('hiddenIt');
+    $('#table1').removeClass('hiddenIt');
+    $('#table2').addClass('hiddenIt');
+    $('#table3').addClass('hiddenIt');
+}
+function carManager() {
+    $('#recently').addClass('hiddenIt');
+    $('#table1').addClass('hiddenIt');
+    $('#table2').removeClass('hiddenIt');
+    $('#table3').addClass('hiddenIt');
+}
+function moneyManager() {
+    $('#recently').addClass('hiddenIt');
+    $('#table1').addClass('hiddenIt');
+    $('#table2').addClass('hiddenIt');
+    $('#table3').removeClass('hiddenIt');
 }

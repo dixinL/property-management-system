@@ -13,18 +13,39 @@ trEdit();//td的点击事件封装成一个函数
 //});
 
 /*下面兩段开始添加删除行**/
-$(document).ready(function() {
-    $("#add_table").bind("click", function(){
+function addTableV(){
 
-            $("<tr><td></td><td></td><td></td><td></td><td class='dd'><a href='javascript:void(0);' class='delBtn'>删除</a></td></tr>").insertBefore(".append-row");
+    $("<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a href='javascript:void(0);' class='delBtn'>删除</a></td></tr>").insertBefore(".append-rowV");
 
-        trEdit();
-        delTr();
-        //$("tbody tr:odd").css("background-color","#EEEEEE");
-    });
+    trEdit();
     delTr();
-});
+    //$("tbody tr:odd").css("background-color","#EEEEEE");
+}
 
+function addTable1(){
+
+        $("<tr><td></td><td></td><td></td><td></td><td><a href='javascript:void(0);' class='delBtn'>删除</a></td></tr>").insertBefore(".append-row1");
+
+    trEdit();
+    delTr();
+    //$("tbody tr:odd").css("background-color","#EEEEEE");
+}
+function addTable2(){
+
+    $("<tr><td></td><td></td><td></td><td></td><td><a href='javascript:void(0);' class='delBtn'>删除</a></td></tr>").insertBefore(".append-row2");
+
+    trEdit();
+    delTr();
+    //$("tbody tr:odd").css("background-color","#EEEEEE");
+}
+function addTable3(){
+
+    $("<tr><td></td><td></td><td></td><td></td><td></td><td><a href='javascript:void(0);' class='delBtn'>删除</a></td></tr>").insertBefore(".append-row3");
+
+    trEdit();
+    delTr();
+    //$("tbody tr:odd").css("background-color","#EEEEEE");
+}
 //删除
 function delTr(){
     $(".delBtn").click(function(){
